@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show Highlighted Comment</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Result</h1>
+
+<p th:text="'Region ' + ${marketComments.region}"></p>
+<p th:text="'Comments: ' + ${marketComments.marketComments}"></p>
+<a href="/refineMarketComments">Submit another message</a>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Refining Market Comments</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Market Comments</h1>
+
+<form action="#" th:action="@{/refineMarketComments}" th:object="${marketComments}" method="post">
+    <p>
+        Region: <input type="text" th:field="*{region}">
+    </p>
+    <p>
+        Comments: <input type="text" th:field="*{marketComments}">
+    </p>
+    <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset">
+    </p>
+</form>
+
+</body>
+</html>
